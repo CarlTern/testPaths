@@ -21,4 +21,4 @@ jobs:
         run: |
           debricked files find
         env:
-          DEBRICKED_URI: 'https://staging.debricked.com'
+          DEBRICKED_URI: 'https://review-6779-nuget-h2qrem.review.debricked.dev'
