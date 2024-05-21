@@ -6,6 +6,9 @@ jobs:
   debricked:
     runs-on: ubuntu-latest
 
+    container:
+      image: debricked/cli:latest-resolution-debian
+      
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
