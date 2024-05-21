@@ -15,10 +15,10 @@ jobs:
 
       - name: Find the files - prod
         run: |
-          debricked files find
+          debricked files find --json
 
       - name: Find the files - review
         run: |
-          debricked files find
+          debricked files find --json
         env:
           DEBRICKED_URI: 'https://review-6779-nuget-h2qrem.review.debricked.dev'
