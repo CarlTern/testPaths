@@ -23,7 +23,7 @@ jobs:
         env:
           DEBRICKED_URI: 'https://review-6779-nuget-h2qrem.review.debricked.dev'
       
-      - name: Find the files - review
+      - name: test to scan
         run: |
           debricked scan
         env:
