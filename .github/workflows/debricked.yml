@@ -1,0 +1,21 @@
+name: Debricked SCA
+
+on: [push]
+
+jobs:
+  debricked:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Find the files - prod
+        run: |
+          debricked files find
+
+      - name: Find the files - review
+        run: |
+          debricked files find
+        env:
+          DEBRICKED_URI: 'https://staging.debricked.com'
