@@ -22,5 +22,10 @@ jobs:
           debricked files find --json
         env:
           DEBRICKED_URI: 'https://review-6779-nuget-h2qrem.review.debricked.dev'
-
-
+      
+      - name: Find the files - review
+        run: |
+          debricked scan
+        env:
+          DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN_STAGING }}
+          DEBRICKED_URI: 'https://staging.debricked.com'
