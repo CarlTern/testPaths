@@ -21,7 +21,7 @@ jobs:
         run: |
           debricked files find --json
         env:
-          DEBRICKED_URI: 'https://review-6779-nuget-h2qrem.review.debricked.dev'
+          DEBRICKED_URI: 'https://review-6779-nuget-emiupe.review.debricked.dev'
       
       - name: test to scan
         run: |
